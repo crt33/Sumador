@@ -21,4 +21,15 @@ public class TestASumar {
 		assertEquals("7=7",resultado);
 	}
 
+	/**
+	 * prueba con número negativo
+	 */
+	
+	@Test
+	public void testNegativo() {
+		ASumar sumi = new ASumar("-1");
+		String resultado = sumi.mostrar();
+		assertEquals("", resultado);
+		}
+		
 }
