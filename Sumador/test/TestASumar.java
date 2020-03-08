@@ -29,7 +29,17 @@ public class TestASumar {
 	public void testNegativo() {
 		ASumar sumi = new ASumar("-1");
 		String resultado = sumi.mostrar();
-		assertEquals("", resultado);
+		assertEquals("",resultado);
 		}
-		
-}
+	
+	/**
+	 * prueba con número de más de un dígito
+	 */
+	
+	@Test
+	public void testmasde1digito() {
+		ASumar sumi = new ASumar("12");
+		String resultado = sumi.mostrar();
+		assertEquals("5 + 7 = 12", resultado);
+        }
+	}
